@@ -1,361 +1,262 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
+# ============================================================================
+# Site Settings - Jekyll Minimal Theme
+# ============================================================================
 
-# Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Vu Hoai Nam"
-title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://namvu128.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "namvu128.github.io"
+# Basic Information
+title: "Vũ Hoài Nam"  # VD: "Vũ Hoài Nam"
+description: "LAB NGHIÊN CỨU SÁNG TẠO TRẺ VỀ CÔNG NGHỆ SỐ"  # VD: "Personal website and portfolio"
+author: "Vũ Hoài Nam"  # VD: "Vũ Hoài Nam"
+email: "namvh@ptit.edu.vn"  # VD: "hoainam@example.com"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
-author:
-  # Biographic information
-  avatar           : "nam.jpg"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+# URL Settings
+url: "https://namvu128.github.io"  # URL của GitHub Pages
+baseurl: ""  # Để trống nếu dùng username.github.io, hoặc "/repo-name" nếu dùng project site
 
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  inspire-hep      : # URL
-  impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
-  semantic         : # URL
-  ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
-  zotero           : # URL
+# Repository
+github_username: "namvu128"  # VD: "namvu128"
+repository: "namvu128/namvu128.github.io"  # VD: "namvu128/namvu128.github.io"
 
-
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
-  # Social media
-  artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
-
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
-
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
-
-
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-
-# Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-
-# Analytics
-analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
-
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-  - files
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
-
-# These settings control how pages and collections are included in the site
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+# Theme
+theme: jekyll-theme-minimal
+# remote_theme: pages-themes/minimal@v0.2.0  # Uncomment nếu cần dùng remote theme
 
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
 
-# Mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
+# ============================================================================
+# Author/Personal Information
+# ============================================================================
 
+# Profile
+logo: "/assets/images/profile.jpg"  # Đường dẫn đến ảnh đại diện (đặt trong thư mục assets/images/)
+show_downloads: false  # true nếu muốn hiển thị nút download
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+# Bio - Hiển thị trong sidebar
+bio: |
+  Giảng viên Khoa Trí tuệ nhân tạo, Học viện Công nghệ Bưu chính Viễn thông
+  
+  Trưởng Lab Nghiên cứu Sáng tạo Trẻ về Công nghệ Số (YIRLoDT Lab)
+  
+  Học viện Công nghệ Bưu chính Viễn thông, Hà Nội
 
+# Ví dụ:
+# bio: |
+#   PhD Student in Computer Science
+#   
+#   VinAI Research
+#   
+#   Hanoi, Vietnam
 
-# HTML Compression
-# - https://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+# ============================================================================
+# Social Links
+# ============================================================================
+
+# Academic & Professional
+linkedin_username: "[LINKEDIN_USERNAME]"  # VD: "vu-hoai-nam"
+google_scholar: "[GOOGLE_SCHOLAR_URL]"  # VD: "https://scholar.google.com/citations?user=YOUR_ID"
+researchgate: "[RESEARCHGATE_URL]"  # VD: "https://www.researchgate.net/profile/Your-Name"
+orcid: "[ORCID_ID]"  # VD: "0000-0001-2345-6789"
+
+# Social Media
+twitter_username: "[TWITTER_USERNAME]"  # VD: "namvu_official" (không cần @)
+facebook_username: ""  # Có thể bỏ trống
+instagram_username: ""  # Có thể bỏ trống
+
+# Development
+github_username: "[GITHUB_USERNAME]"  # VD: "namvu128"
+kaggle_username: ""  # Nếu có
+stackoverflow_id: ""  # Nếu có
+
+# Other
+youtube_channel: ""  # Nếu có
+medium_username: ""  # Nếu có
+
+# ============================================================================
+# Navigation Menu
+# ============================================================================
+
+# Header Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+  - title: "CV"
+    url: "/cv"
+  - title: "Publications"
+    url: "/publications"
+  - title: "Portfolio"
+    url: "/portfolio"
+  - title: "Blog"
+    url: "/blog"
+  - title: "Contact"
+    url: "/contact"
+
+# ============================================================================
+# Collections (cho Publications và Portfolio)
+# ============================================================================
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name
+  portfolio:
+    output: true
+    permalink: /portfolio/:name
+
+# ============================================================================
+# Defaults
+# ============================================================================
+
+defaults:
+  # Posts defaults
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      author: "[TÊN CỦA BẠN]"
+  
+  # Publications defaults
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "default"
+  
+  # Portfolio defaults
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "default"
+
+# ============================================================================
+# Build Settings
+# ============================================================================
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Sass
+sass:
+  style: compressed
+
+# Permalink
+permalink: /blog/:year/:month/:day/:title/
+
+# Timezone
+timezone: Asia/Ho_Chi_Minh  # Hoặc "America/New_York", "Europe/London", etc.
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - .sass-cache
+  - .jekyll-cache
+
+# ============================================================================
+# SEO & Analytics (Optional)
+# ============================================================================
+
+# Google Analytics (nếu muốn theo dõi traffic)
+google_analytics: ""  # VD: "UA-XXXXXXXXX-X" hoặc "G-XXXXXXXXXX"
+
+# SEO Tags
+lang: vi  # Hoặc "en" cho tiếng Anh
+locale: vi_VN  # Hoặc "en_US"
+
+# Social preview image (cho Facebook, Twitter cards)
+social:
+  name: "[TÊN ĐẦY ĐỦ]"
+  links:
+    - "[LINK_LINKEDIN]"
+    - "[LINK_GITHUB]"
+    - "[LINK_TWITTER]"
+
+# ============================================================================
+# HƯỚNG DẪN SỬ DỤNG
+# ============================================================================
+#
+# 1. THAY THẾ PLACEHOLDER:
+#    - Tìm tất cả text trong dấu [] và thay bằng thông tin của bạn
+#    - Các trường không dùng có thể để trống "" hoặc xóa
+#
+# 2. CẤU TRÚC THỦ MỤC CẦN TẠO:
+#    your-repo/
+#    ├── _config.yml (file này)
+#    ├── index.md (trang chủ)
+#    ├── about.md
+#    ├── cv.md
+#    ├── contact.md
+#    ├── publications.md
+#    ├── portfolio.md
+#    ├── blog.md
+#    ├── _publications/ (thư mục chứa các file publication)
+#    │   ├── paper1.md
+#    │   └── paper2.md
+#    ├── _portfolio/ (thư mục chứa các project)
+#    │   ├── project1.md
+#    │   └── project2.md
+#    ├── _posts/ (thư mục chứa blog posts)
+#    │   └── 2024-01-01-post-title.md
+#    └── assets/
+#        ├── images/
+#        │   └── profile.jpg (ảnh đại diện)
+#        ├── css/
+#        └── js/
+#
+# 3. NAVIGATION:
+#    - Chỉnh sửa menu trong phần "navigation:" ở trên
+#    - Thêm/xóa các mục menu tùy nhu cầu
+#
+# 4. SAU KHI CHỈNH SỬA:
+#    - Lưu file với tên "_config.yml"
+#    - Đặt ở thư mục gốc của repository
+#    - Commit và push lên GitHub
+#    - Website sẽ tự động build và update
+#
+# 5. CUSTOM CSS (nếu cần):
+#    - Tạo file: assets/css/style.scss
+#    - Thêm custom CSS để override theme mặc định
+#
+# 6. GEM FILE (nếu chạy local):
+#    Tạo file Gemfile với nội dung:
+#    ```
+#    source "https://rubygems.org"
+#    gem "github-pages", group: :jekyll_plugins
+#    gem "jekyll-theme-minimal"
+#    ```
+#
+# ============================================================================
+# VÍ DỤ ĐIỀN THÔNG TIN:
+# ============================================================================
+#
+# title: "Nguyễn Văn A"
+# description: "Personal website - AI Researcher"
+# author: "Nguyễn Văn A"
+# email: "nguyenvana@gmail.com"
+# github_username: "nguyenvana"
+# linkedin_username: "nguyen-van-a-123"
+# google_scholar: "https://scholar.google.com/citations?user=ABC123"
+#
+# bio: |
+#   PhD Student in Artificial Intelligence
+#   
+#   VinAI Research
+#   
+#   Ho Chi Minh City, Vietnam
+#
+# ============================================================================
